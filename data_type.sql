@@ -104,5 +104,17 @@ select CAST(20200101 as date);
 select CAST('20200101' as date);
 select CONVERT(20200101, date);
 select CONVERT('20200101'. date);
+
 -- datetime 조회방법
 select * from post where created_time like '2024-05%';
+select * from post where created_time <= '2025-01-01' && created_time >='1950-01-01';
+select * from post where year(created_time) <= 2025 && year(created_time) >= 1950;
+SELECT * FROM post WHERE created_time BETWEEN '1950-01-01' AND '2024-12-31';
+
+-- date_format
+select date_format(created_time, '%Y-%m') from post;
+-- (실습)post를 조회할때 date_format활용하여 2024년 데이터 조회, 결과는 *
+select * from post where date_format(created_time, '%Y') = '2024';
+
+-- 오늘날짜
+select now();
