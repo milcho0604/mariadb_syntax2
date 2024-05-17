@@ -97,3 +97,12 @@ select title, contents, ifnull(author_id, '익명') from post;
 -- REGEXP : 정규표현식을 활용한 조회
 select * from author where name regexp'[a-z]';
 select * from author where name regexp'[가-힣]';
+
+-- 날짜 변환 : 숫자 -> 날짜, 문자 -> 날짜
+-- CAST와 CONVERT
+select CAST(20200101 as date);
+select CAST('20200101' as date);
+select CONVERT(20200101, date);
+select CONVERT('20200101'. date);
+-- datetime 조회방법
+select * from post where created_time like '2024-05%';
