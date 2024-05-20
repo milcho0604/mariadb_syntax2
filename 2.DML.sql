@@ -33,8 +33,6 @@ select * from author where id =1;
 select * from author where id > 2;
 select * from author where id > 2 && name ='KS빌';
 
-
-
 -- 특정 컬럼만을 조회할때
 select name, email from author where id = 3;
 
