@@ -1,5 +1,5 @@
 -- idnex 새성문
-create index 인덱스명 on 테이블명(컬러명);
+create index 인덱스명 on 테이블명(컬럼명);
 
 -- index 조회
 show index from 테이블명;
@@ -39,3 +39,5 @@ DELIMITER ;
 
 -- 인덱스 생성
 create index email_index on author(email);
+
+
