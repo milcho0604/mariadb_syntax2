@@ -193,4 +193,4 @@ hset product:1 stock 40
 hincrby product:1 stock 5
 # 반대로,특정 요소의 값음 감소(-값을 줌)
 hincrby product:1 stock -5
-
+ 
